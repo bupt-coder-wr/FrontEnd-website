@@ -109,5 +109,18 @@
 
   ![patch.png](./patch.png)
 
-> 参考链接 MDN
-> https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Methods
+### Get 与 Post 区别
+
+- Get 在浏览器回退时是无害的，Post 会再次提交请求
+- Get 请求会被浏览器主动缓存，Post 不会，除非手动设置
+- Get 请求只能进行 URL 编码，Post 支持多种编码方式
+- Get 传参暴漏在 URL 上，Post 放在 Request Body 中
+- Get 传参有长度限制，Post 没有
+- Get 请求的参数直接收 ASCII 字符，Post 支持四种（data-form，x-www-form-urlencodeed,raw,binary）
+
+### Put 与 Patch 区别 （字节三面）
+
+- Put 用于创建或完整更新数据，安全且密等，Patch 用于更新部分数据，不是安全和幂等
+  > 参考链接 MDN
+  > https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Methods  
+  > https://juejin.cn/post/6844903433674178574

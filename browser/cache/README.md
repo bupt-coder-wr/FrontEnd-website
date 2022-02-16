@@ -42,3 +42,5 @@ Cache-control: max-age=30
 `ETag`和`If-None-Match`
 
 `ETag`类似于文件指纹，`If-None-Match`会将当前 `ETag` 发送给服务器，询问该资源 `ETag` 是否变动，有变动的话就将资源发送回来。`ETag` 优先级比 `Last-Modified` 高
+
+> 内容参考： https://juejin.cn/post/6844903593275817998
