@@ -53,7 +53,7 @@
 
 JSBridge 实现原理：
 
-Javascript 是运行在 Javascript Context 中。由于这些 Context 于原生运行环境的天然隔离，可以将 Javascript 调用 Native 看作是一次 RPC 调用。把前端看作是 RPC 的前端，把 Native 看作 RPC 的服务端。
+Javascript 是运行在 Javascript Context 中。由于这些 Context 于原生运行环境的天然隔离，可以将 Javascript 调用 Native 看作是一次 RPC（远程过程调用） 调用。把前端看作是 RPC 的前端，把 Native 看作 RPC 的服务端。
 
 JSBridge 的通信原理：
 
@@ -75,7 +75,7 @@ JSBridge 的通信原理：
 
 React Fiber 主要解决了页面元素很多，且需要频繁刷新的场景下，React15 会出现的掉帧现象。
 
-根本原因：大量的同步计算任务阻塞了浏览器的 UI 渲染。当调用 setState 更新页面的时候，react 会便利所有的节点，计算差异，然后再更新 UI。。如果页面元素过多，计算的过程超过 16ms，就容易出现掉帧。
+根本原因：大量的同步计算任务阻塞了浏览器的 UI 渲染。当调用 setState 更新页面的时候，react 会便利所有的节点，计算差异，然后再更新 UI。如果页面元素过多，计算的过程超过 16ms，就容易出现掉帧。
 
 解决问题的思路：
 

@@ -120,7 +120,8 @@
 
 ### Put 与 Patch 区别 （字节三面）
 
-- Put 用于创建或完整更新数据，安全且密等，Patch 用于更新部分数据，不是安全和幂等
+- Put 用于创建或完整更新数据，安全且密等
+- Patch 用于更新部分数据，不是安全和幂等
   > 参考链接 MDN
   > https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Methods  
   > https://juejin.cn/post/6844903433674178574
