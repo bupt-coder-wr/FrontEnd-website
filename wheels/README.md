@@ -134,3 +134,28 @@ const deepClone = target => {
   return result
 }
 ```
+
+### AJAX
+
+```javascript
+// 1. 创建 XMLHttpRequest()对象
+const xhr = new XMLHttpRequest()
+
+// 2. 请求数据
+xhr.open('get', 'getStar.php', true)
+
+// 3. 创建回调函数
+xhr.onreadystatechange = function () {
+  if (xhr.readyState === 4 && [200, 304].includes(xhr.status)) {
+    console.log(ajax.responseText)
+  } else {
+    console.log('AJAX交互失败')
+  }
+}
+
+// 4. 设置请求的 HTTP 头部信息(这是请求头)
+xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded')
+
+// 5. 发送请求
+xhr.send()
+```

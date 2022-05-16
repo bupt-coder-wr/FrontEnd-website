@@ -77,7 +77,7 @@ function heapify(tree, n, i) {
     if (k + 1 < n && tree[k] < tree[k + 1]) {
       k++
     }
-    if (tree[k] > tmp) {
+    if (tree[k] > max) {
       // 此时k为最大节点，继续向下堆化
       swap(tree, i, k)
       i = k

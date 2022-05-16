@@ -10,7 +10,7 @@ function isPromise(fn) {
 }
 ```
 
-### promise.all
+### promise.all(字节一面)
 
 > Promise.all 特点：
 >
@@ -65,7 +65,7 @@ let p2 = new Promise(resolve => {
   }, 2000)
 })
 let p3 = 'success'
-Promise.myAll(1).then(
+Promise.myAll([p1, p2, p3]).then(
   res => {
     console.log(res)
   },
